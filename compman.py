@@ -78,11 +78,11 @@ async def compile(ctx):
         code_output = runCode('python','compile.txt')
         await ctx.send(f'```\n{code_output}\n```')
     elif language == 'javascript':
-        f = open('test.js', 'w')
+        f = open('compile.txt', 'w')
         f.write('\n'.join(parsedLines))
         f.close()
 
-        code_output = runCode('javascript', 'test.js')
+        code_output = runCode('javascript', 'compile.txt')
         await ctx.send(f'```\n{code_output}\n```')
     
 

@@ -43,18 +43,18 @@ def runCode(language, filePath):
     return output
 
 def testDiscord(code):
-    file = open('test.js', 'w');
+    file = open('test.txt', 'w');
 
     file.write(code)
 
     file.close()
 
-    output = runCode('javascript', 'test.js')
+    output = runCode('javascript', 'test.txt')
 
     print(output)
 
 
-testDiscord("const testFunction = (name, age) => {\n\t const object = {name, age}\n\t return object\n}\n\nconsole.table(testFunction('ammar', 20))")
+testDiscord("console.log(5 +);")
 
 
     
