@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from main import runCode
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -44,8 +45,15 @@ async def compile(ctx):
 
 
     f = open("compile.txt", "w")# w allows for overwriting the text file each time
-    f.write('\n'.join(parsedLines))#joins the parsed list of lines with a new line at the end of each and writes that to the text file
+    f.write('\n'.join(parsedLines)) #joins the parsed list of lines with a new line at the end of each and writes that to the text file
+
+    
     f.close()
+
+    code_output = runCode('compile.txt')
+    await ctx.send(f'```\n{code_output}\n```')
+
+
 
 
 #IMPORTANT: add client run with token
