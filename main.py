@@ -2,15 +2,8 @@ import subprocess
 import sys
 
 
-def runCode(filePath):
-
-    file = open(filePath , 'r')
-
-
-
-    #subprocess.run() runs external "program" in a seperate environment
-    #sys.executable gives path to Python execute
-
+def runPython(filePath):
+    file = open(filePath, 'r')
     result = subprocess.run(
         [sys.executable, "-c", file.read()], capture_output=True, text=True, timeout=1
     )
@@ -23,11 +16,35 @@ def runCode(filePath):
 
     output = stdout + stderr
 
-    print(output)
-
     file.close()
+    return output
+
+def runJavaScript(filePath):
+    
+
+    result = subprocess.run(['node', filePath], capture_output=True, text=True, timeout=1)
+
+    stdout = result.stdout
+    stderr = result.stderr
+
+    output = stdout + stderr
 
     return output
 
-def testImport(num):
-    print(num)
+
+def runCode(language, filePath):
+    output = ''
+    if language == 'python':
+        output = runPython(filePath)
+    elif language == 'javascript':
+        output = runJavaScript(filePath)
+    
+    return output
+
+
+#follows the same process as above, using node
+
+    
+
+
+
