@@ -1,2 +1,27 @@
-for i in range(10):
-  print(i)
+def convert_to_roman_numeral(num):
+        output = ""
+        symbols_dict = { 1:"I",
+                         4:"IV",
+                         5:"V",
+                         9: "IX",
+                         10:"X",
+                         40:"XL",
+                         50:"L",
+                         90:"XC",
+                         100:"C",
+                         400:"CD",
+                         500:"D",
+                         900:"CM",
+                         1000:"M"}
+
+
+
+        for number in reversed(symbols_dict):
+            while num >= number:
+
+                output += symbols_dict[number]
+                num -= number
+
+
+        return output
+print (convert_to_roman_numeral(354))

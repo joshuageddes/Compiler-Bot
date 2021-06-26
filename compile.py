@@ -8,29 +8,28 @@ def runPython(filePath):
         [sys.executable, "-c", file.read()], capture_output=True, text=True, timeout=1
     )
 
-    #Prints out successful shell output
+    # Prints out successful shell output
     stdout = result.stdout
 
-    #Prints out error messages
+    # Prints out error messages
     stderr = result.stderr
-
     output = stdout + stderr
 
     file.close()
     return output
 
+
 def runJavaScript(filePath):
-    
-    #follows same process as above
-    result = subprocess.run(['node', filePath], capture_output=True, text=True, timeout=1)
+
+    # follows same process as above
+    result = subprocess.run(
+        ['node', filePath], capture_output=True, text=True, timeout=1)
 
     stdout = result.stdout
     stderr = result.stderr
-
     output = stdout + stderr
 
     return output
-
 
 
 def runCode(language, filePath):
@@ -39,25 +38,5 @@ def runCode(language, filePath):
         output = runPython(filePath)
     elif language == 'javascript':
         output = runJavaScript(filePath)
-    
+
     return output
-
-def testDiscord(code):
-    file = open('test.js', 'w');
-
-    file.write(code)
-
-    file.close()
-
-    output = runCode('javascript', 'test.js')
-
-    print(output)
-
-
-testDiscord("const testFunction = (name, age) => {\n\t const object = {name, age}\n\t return object\n}\n\nconsole.table(testFunction('ammar', 20))")
-
-
-    
-
-
-
