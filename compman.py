@@ -34,4 +34,4 @@ async def compile(ctx, args):
 
 
 
-client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.WkxMJru1Mq7Yky29SyQhHtBDgwg")
+client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.qfD63_lhPtWrj-XfNPZBsPRlgYA")
