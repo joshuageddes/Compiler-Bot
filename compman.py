@@ -25,8 +25,27 @@ async def s(ctx):
 @client.command()
 async def compile(ctx):
     code = ctx.message.content
-    print(type(code))
+    # print(type(code))
+    print('Non-Parsed Code: ')
     print(code)
+    print('======================')
+
+    print('Lines of Code:')
+
+    #splitting the string into a list for each line
+    lines = code.split('\n')
+    print(lines)
+
+    parsedLines = []
+    #want to exclude the .compile and the ```
+    #might be a simpler way to do this
+    for i in range(2, len(lines) - 1):
+        parsedLines.append(lines[i])
 
 
+    f = open("compile.txt", "w")# w allows for overwriting the text file each time
+    f.write('\n'.join(parsedLines))#joins the parsed list of lines with a new line at the end of each and writes that to the text file
+    f.close()
 
+
+#IMPORTANT: add client run with token
