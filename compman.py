@@ -29,4 +29,4 @@ async def compile(ctx):
     print(code)
 
 
-client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.rXw41oSBVaR5GKOZR7wCoDW0Szg")
+
