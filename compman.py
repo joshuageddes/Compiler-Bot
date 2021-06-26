@@ -2,15 +2,8 @@ import discord
 from discord.ext import commands
 from compile import runCode
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-
-
-
 client = commands.Bot(command_prefix=".")
+language = "python"
 
 @client.event
 async def on_ready():
@@ -23,8 +16,42 @@ async def s(ctx):
     await ctx.send("You ever just sploch on a homie")
 
 
+
+@client.command()
+async def language(ctx):
+    global langauge
+    languages = ["python", "java"]
+
+    code = ctx.message.content.split()
+
+    if len(code) == 1:
+        await ctx.send(f"Current language is ```{langauge}```")
+
+    
+    
+    else :
+        code[1] = code[1].lower()
+        if code[1] == "list":
+            out = "Supported languages include :"
+            for lan in languages :
+                out += f"\n```{lan}```"
+            
+            
+        elif code[1] in languages:
+
+            langauge = code[1]
+            out = f"Language set to ```{code[1]}```"
+
+        else :
+            out = f"Langauge '{code[1]}' does not exist.\nUse ```.language list``` for a list of supported langauges"
+
+    
+
+    await ctx.send(out)
+
 @client.command()
 async def compile(ctx):
+    global langauge
     code = ctx.message.content
     
 
@@ -39,8 +66,7 @@ async def compile(ctx):
     for i in range(2, len(lines) - 1):
         parsedLines.append(lines[i])
 
-    #parses the lines for the language --> probably an easier way to send parameters from the discord bot
-    language = lines[0].split(' ')[1]
+    
     print(language)
     if language == 'python':
         f = open("compile.txt", "w")# w allows for overwriting the text file each time
@@ -59,6 +85,7 @@ async def compile(ctx):
         code_output = runCode('javascript', 'test.js')
         await ctx.send(f'```\n{code_output}\n```')
     
+
 
 
 
