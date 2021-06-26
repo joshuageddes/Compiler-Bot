@@ -21,7 +21,7 @@ def runPython(filePath):
 
 def runJavaScript(filePath):
     
-
+    #follows same process as above
     result = subprocess.run(['node', filePath], capture_output=True, text=True, timeout=1)
 
     stdout = result.stdout
@@ -30,6 +30,7 @@ def runJavaScript(filePath):
     output = stdout + stderr
 
     return output
+
 
 
 def runCode(language, filePath):
@@ -41,8 +42,20 @@ def runCode(language, filePath):
     
     return output
 
+def testDiscord(code):
+    file = open('test.js', 'w');
 
-#follows the same process as above, using node
+    file.write(code)
+
+    file.close()
+
+    output = runCode('javascript', 'test.js')
+
+    print(output)
+
+
+testDiscord("const testFunction = (name, age) => {\n\t const object = {name, age}\n\t return object\n}\n\nconsole.table(testFunction('ammar', 20))")
+
 
     
 

@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from main import runCode
+from compile import runCode
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -26,28 +26,25 @@ async def s(ctx):
 @client.command()
 async def compile(ctx):
     code = ctx.message.content
-    # print(type(code))
-    print('Non-Parsed Code: ')
-    print(code)
-    print('======================')
-
-    print('Lines of Code:')
+    
 
     #splitting the string into a list for each line
     lines = code.split('\n')
-    print(lines)
+    
 
     parsedLines = []
+
     #want to exclude the .compile and the ```
     #might be a simpler way to do this
     for i in range(2, len(lines) - 1):
         parsedLines.append(lines[i])
 
+    #parses the lines for the language --> probably an easier way to send parameters from the discord bot
     language = lines[0].split(' ')[1]
     print(language)
     if language == 'python':
         f = open("compile.txt", "w")# w allows for overwriting the text file each time
-        f.write('\n'.join(parsedLines)) #joins the parsed list of lines with a new line at the end of each and writes that to the text file
+        f.write('\n'.join(parsedLines)) # joins the parsed list of lines with a new line at the end of each and writes that to the text file
 
         
         f.close()
@@ -67,4 +64,4 @@ async def compile(ctx):
 
 
 #IMPORTANT: add client run with token
-client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.2f9QvJJ75S3eRtii5Gl0kIX07Pk")
+#client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.2f9QvJJ75S3eRtii5Gl0kIX07Pk")
