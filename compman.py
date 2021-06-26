@@ -23,15 +23,10 @@ async def s(ctx):
 
 
 @client.command()
-async def compile(ctx, args):
-    options = webdriver.ChromeOptions()
-    options.add_argument("--incognito")
-    browser = webdriver.Chrome(options=options)
-    browser.set_window_size(1920, 1080)
-    browser.maximize_window()
-
-    browser.get("https://www.w3schools.com/python/trypython.asp?filename=demo_compiler")
+async def compile(ctx):
+    code = ctx.message.content
+    print(type(code))
+    print(code)
 
 
-
-client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.qfD63_lhPtWrj-XfNPZBsPRlgYA")
+client.run("ODU4MjA3OTIyMzY2NDQ3NjQ2.YNayaQ.rXw41oSBVaR5GKOZR7wCoDW0Szg")
