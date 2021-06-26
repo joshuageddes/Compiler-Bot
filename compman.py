@@ -31,6 +31,8 @@ async def compile(ctx):
     print('======================')
 
     print('Lines of Code:')
+
+    #splitting the string into a list for each line
     lines = code.split('\n')
     print(lines)
 
@@ -41,8 +43,8 @@ async def compile(ctx):
         parsedLines.append(lines[i])
 
 
-    f = open("compile.txt", "w")
-    f.write('\n'.join(parsedLines))
+    f = open("compile.txt", "w")# w allows for overwriting the text file each time
+    f.write('\n'.join(parsedLines))#joins the parsed list of lines with a new line at the end of each and writes that to the text file
     f.close()
 
 
