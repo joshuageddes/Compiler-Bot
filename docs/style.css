@@ -39,6 +39,10 @@
     color: var(--blue) !important;
 }
 
+.nav-btn{
+    display: none;
+}
+
 /* Spotlight Section */
 .spotlight{
     /* margin-top: 15vh; */
@@ -82,4 +86,22 @@
     background: var(--turqoise) !important;
     height: 10vh;
     font-size: 2rem !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .big-btn{
+        font-size: 1rem !important;
+        padding: 1rem !important;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+
+    .nav-link{
+        font-size: .75rem !important;
+    }
+
+    
 }
