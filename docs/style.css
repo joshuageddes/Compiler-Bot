@@ -54,3 +54,25 @@
 .information{
     background: linear-gradient(180deg, rgba(40, 51, 56, 0) 0%, #437E9A 100%);
 }
+
+
+/* ========= Walkthrough Page ============== */
+.youtube{
+    height: 60vh;
+}
+
+.accordion{
+    background: transparent !important;
+}
+
+.accordion-item{
+    background: var(--white) !important;
+}
+
+.accordion-header{
+    background: transparent !important;
+}
+
+.accordion-button{
+    background: var(--grey) !important;
+}
