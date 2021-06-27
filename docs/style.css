@@ -38,6 +38,8 @@
     background: var(--grey);
     border-radius: 2rem;
 }
-
+.btn-primary{
+    min-width: 1200px;
+}
 
 /* Information Section */
