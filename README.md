@@ -1,4 +1,4 @@
-# Comp-Man
+# Compiler-Bot
 
 Python Compiler Discord Bot
 
