@@ -1,0 +1,43 @@
+/* Root Styles */
+:root{
+    font-family: 'Roboto', sans-serif;
+
+    --grey: #C4C4C4;
+    --lightgrey: #8D7F7F;
+    --black: #282828;
+    --white: #FFFFFF;
+}
+
+
+
+/* Bootstrap Classes Redefinitions / Template Class Definitions */
+.bg-dark{
+    background: var(--black) !important;
+}
+
+.text-light{
+    color: var(--white) !important;
+}
+
+
+.text-dark{
+    color: var(--black) !important;
+}
+
+.text-grey{
+    color: var(--lightgrey);
+}
+
+/* Spotlight Section */
+.spotlight{
+    /* margin-top: 15vh; */
+    height: 95vh;
+}
+
+.big-btn{
+    background: var(--grey);
+    border-radius: 2rem;
+}
+
+
+/* Information Section */
