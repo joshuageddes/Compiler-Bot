@@ -49,9 +49,7 @@
     background: var(--blue);
     border-radius: 2rem;
 }
-.btn-primary{
-    min-width: 1200px;
-}
+
 
 /* Information Section */
 .information{
