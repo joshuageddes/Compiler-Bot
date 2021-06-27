@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- BoxIcons for Hamburger -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Compiler Cal | Walkthrough</title>
+</head>
+<body class='bg-dark'>
+    <nav class="navigation container-fluid my-2">
+        <div class="row d-flex justify-content-between">
+            <div class="col-4">
+                <img src="assets/imgs/compilerCal.png" alt="" class="img-fluid logo">
+                <!-- Should add logo here -->
+            </div>
+
+            <div class="col-8 my-auto">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="index.html" class="text-light h4 text-decoration-none nav-link">Home</a>
+                    </div>
+        
+                    <div class="col-4 text-center">
+                        <a href="commands.html" class="text-light h4 text-decoration-none nav-link">Commands</a>
+                    </div>
+        
+                    <div class="col-4 text-center">
+                        <a href="walkthrough.html" class="text-light h4 text-decoration-underline active nav-link">Walkthrough</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="video container">
+        <div class="row">
+            <iframe class="youtube" src="https://www.youtube.com/embed/l-YhIvSGPec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Try It Out Section -->
+
+    <section class="try-it container my-5">
+	
+		<div class="row">
+			<div class="col-3">
+                <p class="display-4 text-light">Try It Out:</p>
+            </div>
+            <div class="col-9">
+                <p class="fs-3 text-light">Copy and paste any of the following programs into Discord to experience the bot for yourself!</p>
+            </div>
+		</div>
+		
+		
+		
+        <div class="row my-5">
+            <div class="col-3">
+                <img src="assets/imgs/code.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9 d-flex align-items-center">
+                <p class="fs-3 text-light ">Format your Discord message <br> like this!</p>
+            </div>
+		
+			
+        </div>
+		
+		<div class="row my-5">
+            <div class="col-3">
+                <img src="assets/imgs/codepy.png" alt="" class="img-fluid">
+            </div>
+            
+		
+			      <div class="col-9 d-flex align-items-center">
+                <p class="fs-3 text-light">Format your Discord message <br>like this for code <br>written in Python!</p>
+            </div>
+    </div>
+		
+		
+        <div class="row">
+            
+            <p class="display-6 text-light">Python</p>
+        </div>
+
+        <div class="row">
+
+            <div class="accordion " id="accordionExample">
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Print Hello World!
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light">
+                      <p class="font-monospace">print("Hello World!")</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Number to Roman Numeral Converter
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light">
+                      <p class="font-monospace">def convert_to_roman_numeral(num):<br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; output = ""<br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; symbols_dict = { 1:"I", 4:"IV", 5:"V", 9: "IX", 10:"X", 40:"XL", 50:"L", 90:"XC", 100:"C", 400:"CD", 500:"D", 900:"CM", 1000:"M"}<br> 
+                    
+                        &nbsp; &nbsp; &nbsp; &nbsp; for number in reversed(symbols_dict): <br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while num >= number:<br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; output += symbols_dict[number] <br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; num -= number<br> 
+                    
+                        &nbsp; &nbsp; &nbsp; &nbsp; return output <br> 
+                        print (convert_to_roman_numeral(354))</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Celsius To Fahrenheit Converter
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light">
+                      <p class="font-monospace">
+                        def cel_to_fahr(temp):<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;output = (temp * (9/5))+32 <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;return output <br><br>
+                    
+                    print(cel_to_fahr(100))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row">
+            
+            <p class="display-6 text-light">JavaScript</p>
+        </div>
+
+        <div class="row">
+
+            <div class="accordion " id="accordionExample2">
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      Print Hello World!
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body text-light">
+                      <p class="font-monospace">console.log("Hello World!")</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Addition of Variables
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body text-light">
+                        <p class="font-monospace">
+                            let x = 5; <br>
+                            let y = 2; <br>
+                            let z = x + y <br>
+                            console.log(z)
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-5">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed rounded rounded-pill text-light display-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Celsius To Fahrenheit Converter
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body text-light">
+                        <p class="font-monospace">
+                            let celToFahr = temp => {<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; let output = (temp * (9/5)) + 32; <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; return output;<br>
+                            } <br>
+                            console.log(celToFahr(100))
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+
+    </section>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+</html>

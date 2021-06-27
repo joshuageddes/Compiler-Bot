@@ -1,0 +1,107 @@
+/* Root Styles */
+:root{
+    font-family: 'Roboto', sans-serif;
+
+    --grey: #C4C4C4;
+    --lightgrey: #8D7F7F;
+    --black: #282828;
+    --white: #FFFFFF;
+    --blue: #2294C5;
+    --turqoise: #569EC6;
+
+}
+
+
+/* Bootstrap Classes Redefinitions / Template Class Definitions */
+.bg-dark{
+    background: var(--black) !important;
+}
+
+.text-light{
+    color: var(--white) !important;
+}
+
+
+.text-dark{
+    color: var(--black) !important;
+}
+
+.text-grey{
+    color: var(--lightgrey);
+}
+
+/* Navigation  */
+.logo{
+    height: 10vh;
+}
+
+.active{
+    color: var(--blue) !important;
+}
+
+.nav-btn{
+    display: none;
+}
+
+/* Spotlight Section */
+.spotlight{
+    /* margin-top: 15vh; */
+    height: 95vh;
+}
+
+.big-btn{
+    background: var(--blue);
+    border-radius: 2rem;
+}
+
+
+/* Information Section */
+.information{
+    background: linear-gradient(180deg, rgba(40, 51, 56, 0) 0%, #437E9A 100%);
+}
+
+
+/* ========= Walkthrough Page ============== */
+.youtube{
+    height: 60vh;
+}
+
+.accordion{
+    background: transparent !important;
+}
+
+.accordion-item{
+    background: transparent !important;
+    border: none !important;
+}
+
+
+
+.accordion-body{
+    background: transparent !important;
+
+}
+
+.accordion-button{
+    background: var(--turqoise) !important;
+    height: 10vh;
+    font-size: 2rem !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .big-btn{
+        font-size: 1rem !important;
+        padding: 1rem !important;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+
+    .nav-link{
+        font-size: .75rem !important;
+    }
+
+    
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- BoxIcons for Hamburger -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Compiler Cal</title>
+</head>
+<body class='bg-dark'>
+    <nav class="navigation container-fluid my-2">
+        <div class="row d-flex justify-content-between">
+            <div class="col-2">
+                <img src="assets/imgs/compilerCal.png" alt="" class="img-fluid logo">
+                <!-- Should add logo here -->
+            </div>
+
+            <div class="col-10 my-auto desk-nav">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="index.html" class="text-light fs-4 text-decoration-underline active nav-link">Home</a>
+                    </div>
+        
+                    <div class="col-4 text-center">
+                        <a href="commands.html" class="text-light fs-4 text-decoration-none nav-link">Commands</a>
+                    </div>
+        
+                    <div class="col-4 text-center">
+                        <a href="walkthrough.html" class="text-light fs-4 text-decoration-none nav-link">Walkthrough</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Spotlight Section -->
+    <section class="spotlight container d-flex flex-column justify-content-center">
+        <div class="row">
+            <p class="display-2 text-light">Instant Compiled Code</p>
+            <p class="display-2 text-light">Skip the IDE's</p>
+            <p class="text-light">A beginner friendly Discord Bot that allows you to directly compile your code in Discord.</p>
+        </div>
+
+        <div class="row mx-auto my-5">
+            <div class="col-4">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=858207922366447646&permissions=8&scope=bot" target="_blank" class="big-btn display-4 fw-lighter text-light text-decoration-none px-5 py-3 text-nowrap">Add to Server</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Information Section -->
+
+    <section class="information container-fluid px-5">
+        <div class="row mb-5">
+            <div class="col-8 d-flex justify-content-center flex-column">
+                <p class="display-3 my-3 text-light fw-bold">Beginner Friendly</p>
+                <p class="text-light fs-3">A user-friendly interface that makes it extremely easy to use for all levels of coders! 
+				No matter how much experience you have, anyone can use a command to get started.</p>
+            </div>
+
+            <div class="col-4 d-flex align-items-center">
+                <svg version="1.1" class='img-fluid' id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+
+	<g>
+		<path d="M269.272,310.198c86.177-0.005,117.184-86.291,125.301-157.169C404.572,65.715,363.282,0,269.272,0
+			C175.274,0,133.963,65.71,143.97,153.029C152.095,223.907,183.093,310.204,269.272,310.198z" fill="white"//>
+		<path d="M457.707,346.115c2.773,0,5.528,0.083,8.264,0.235c-4.101-5.85-8.848-11.01-14.403-15.158
+			c-16.559-12.359-38.005-16.414-56.964-23.864c-9.229-3.625-17.493-7.226-25.251-11.326
+			c-26.184,28.715-60.329,43.736-100.091,43.74c-39.749,0-73.891-15.021-100.072-43.74c-7.758,4.101-16.024,7.701-25.251,11.326
+			c-18.959,7.451-40.404,11.505-56.964,23.864c-28.638,21.375-36.039,69.46-41.854,102.26c-4.799,27.076-8.023,54.707-8.964,82.209
+			c-0.729,21.303,9.789,24.29,27.611,30.721c22.315,8.048,45.356,14.023,68.552,18.921c44.797,9.46,90.973,16.729,136.95,17.054
+			c22.278-0.159,44.601-1.956,66.792-4.833c-16.431-23.807-26.068-52.645-26.068-83.695
+			C309.995,412.378,376.258,346.115,457.707,346.115z" fill="white"//>
+		<path d="M457.707,375.658c-65.262,0-118.171,52.909-118.171,118.171S392.444,612,457.707,612s118.172-52.909,118.172-118.171
+			C575.878,428.566,522.969,375.658,457.707,375.658z M509.407,514.103h-31.425v31.424c0,11.198-9.077,20.276-20.274,20.276
+			c-11.198,0-20.276-9.078-20.276-20.276v-31.424h-31.424c-11.198,0-20.276-9.077-20.276-20.276
+			c0-11.198,9.077-20.276,20.276-20.276h31.424v-31.424c0-11.198,9.078-20.276,20.276-20.276c11.198,0,20.274,9.078,20.274,20.276
+			v31.424h31.425c11.198,0,20.276,9.078,20.276,20.276C529.682,505.027,520.606,514.103,509.407,514.103z" fill="white"//>
+	</g>
+</svg>
+				
+
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-4 d-flex align-items-center">
+                <svg version="1.1" class='img-fluid' id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 268.733 268.733" style="enable-background:new 0 0 268.733 268.733;" xml:space="preserve">
+<g>
+	<path d="M0,141.467v36.37c0,5.69,4.613,10.304,10.304,10.304h33.425v-39.175c0-13.63,3.309-26.493,9.135-37.864
+		c-12.09-0.718-23.009-5.835-31.187-13.77C8.495,107.539,0,123.506,0,141.467z" fill="white"/>
+	<path d="M78.616,81.218c-5.225-8.579-8.236-18.646-8.236-29.403c0-6.551,1.13-12.839,3.183-18.697
+		c-5.172-3.171-11.254-5.001-17.765-5.001c-18.8,0-34.041,15.239-34.041,34.04c0,18.8,15.241,34.041,34.041,34.041
+		c2.589,0,5.107-0.299,7.531-0.847C67.813,90.029,72.951,85.282,78.616,81.218z" fill="white"/>
+	<path d="M171.078,150.335c5.518,0,10.918,1.226,15.834,3.515l8.482-6.204c-0.432-22.684-11.904-42.655-29.279-54.77
+		c-10.175,9.679-23.919,15.639-39.037,15.639c-15.118,0-28.862-5.96-39.038-15.638c-17.712,12.35-29.312,32.86-29.312,56.091v44.552
+		c0,6.971,5.651,12.622,12.622,12.622h66.796c-2.988-5.393-4.696-11.589-4.696-18.178
+		C133.45,167.214,150.33,150.335,171.078,150.335z" fill="white"/>
+	<circle cx="127.078" cy="51.815" r="41.698" fill="white"/>
+	<path d="M247.104,215.36c-3.436,0-6.672,0.822-9.558,2.248l-40.529-29.645l40.234-29.431c2.957,1.518,6.301,2.391,9.852,2.391
+		c11.279,0,20.53-8.636,21.529-19.652c1.163-12.944-9.064-23.603-21.529-23.603c-11.944,0-21.628,9.683-21.628,21.628
+		c0,0.99,0.09,1.957,0.219,2.911l-40.359,29.521c-3.96-3.473-9.025-5.393-14.258-5.393c-11.944,0-21.628,9.683-21.628,21.628
+		c0,11.944,9.684,21.628,21.628,21.628c5.273,0,10.329-1.941,14.258-5.394l40.408,29.557c-0.159,1.058-0.268,2.132-0.268,3.234
+		c0,11.944,9.684,21.628,21.628,21.628c11.912,0,21.629-9.655,21.629-21.628C268.733,225.079,259.078,215.36,247.104,215.36z" fill="white"/>
+</g>
+</svg>
+            </div>
+
+            <div class="col-8 d-flex justify-content-center flex-column">
+                <p class="display-3 my-3 text-light fw-bold">Share Code with Your Friends</p>
+                <p class="text-light fs-3">Simplify the process of sharing code with your friends! 
+				Send unlimited snippets of code through Discord, 
+				allowing your friends to instantly see the output and eliminate the use of IDE’s.</p>
+            </div>
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-8 d-flex justify-content-center flex-column">
+                <p class="display-3 my-3 text-light fw-bold">Multi-Language Support</p>
+                <p class="text-light fs-3">Easily toggle between our two supported languages, Python and Javascript, with 1 simple command! </p>
+            </div>
+
+            <div class="col-4 d-flex align-items-center">
+                <svg version="1.1" class='img-fluid' id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+	<g>
+		<path d="M503.994,239.341l-106.667-85.333c-13.968-11.175-34.66-1.23-34.66,16.659v65.521
+			c-33.239,4.748-62.932,20.423-85.333,43.279V149.333h64c17.888,0,27.833-20.692,16.659-34.66L272.659,8.007
+			c-8.54-10.675-24.777-10.675-33.317,0l-85.333,106.667c-11.175,13.968-1.23,34.66,16.659,34.66h64v130.133
+			c-22.401-22.856-52.094-38.531-85.333-43.279v-65.521c0-17.888-20.692-27.833-34.66-16.659L8.007,239.341
+			c-10.675,8.54-10.675,24.777,0,33.317l106.667,85.333c13.968,11.175,34.66,1.23,34.66-16.659v-61.869
+			c48.718,9.869,85.333,52.884,85.333,104.536v106.667c0,11.782,9.551,21.333,21.333,21.333s21.333-9.551,21.333-21.333V384
+			c0-51.652,36.615-94.666,85.333-104.536v61.869c0,17.888,20.692,27.833,34.66,16.659l106.667-85.333
+			C514.669,264.118,514.669,247.882,503.994,239.341z M256,55.483l40.947,51.183h-81.893L256,55.483z M106.667,296.947L55.483,256
+			l51.183-40.947V296.947z M405.333,296.947v-81.893L456.517,256L405.333,296.947z" fill="white"/>
+	</g>
+</svg>
+            </div>
+        </div>
+
+        <div class="row pb-5">
+            <div class="col-4 d-flex align-items-center">
+                <svg version="1.1" class='img-fluid' id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="445px" height="445px" viewBox="0 0 445 445" style="enable-background:new 0 0 445 445;" xml:space="preserve">
+
+	<g>
+		<path d="M432.5,105.461h-24.191v-1.337c0-5.249-3.278-9.939-8.21-11.741c-29.977-10.955-60.576-16.51-90.945-16.51
+			c-28.925,0-58.052,5.049-86.652,14.992c-28.604-9.942-57.732-14.992-86.656-14.992c-30.371,0-60.969,5.555-90.943,16.51
+			c-4.93,1.802-8.209,6.491-8.209,11.74v1.337H12.5c-6.903,0-12.5,5.596-12.5,12.5v238.667c0,6.904,5.597,12.5,12.5,12.5h420
+			c6.902,0,12.5-5.596,12.5-12.5V117.961C445,111.058,439.402,105.461,432.5,105.461z M383.309,113.019v188.064
+			c-24.57-7.276-49.442-10.957-74.16-10.957s-49.584,3.679-74.147,10.955V113.018c24.567-8.063,49.471-12.144,74.152-12.144
+			C333.834,100.874,358.738,104.956,383.309,113.019z M61.691,113.018c24.568-8.063,49.471-12.144,74.152-12.144
+			c24.681,0,49.586,4.082,74.156,12.145v188.064c-24.571-7.276-49.443-10.957-74.161-10.957c-24.717,0-49.584,3.679-74.147,10.955
+			V113.018L61.691,113.018z M25,130.461h11.691v187.913c0,4.081,1.992,7.905,5.337,10.244c2.129,1.487,4.635,2.256,7.164,2.256
+			c1.444,0,2.896-0.25,4.289-0.759c27.219-9.946,54.928-14.989,82.357-14.989c24.678,0,49.584,4.097,74.161,12.157v16.845h-185
+			L25,130.461L25,130.461z M420,344.128H235v-16.846c24.568-8.062,49.471-12.156,74.147-12.156c27.43,0,55.144,5.043,82.371,14.989
+			c3.835,1.4,8.108,0.841,11.453-1.498c3.345-2.34,5.336-6.163,5.336-10.244V130.461H420V344.128z" fill="white"/>
+		<path d="M99.5,172.001h65.332c6.903,0,12.5-5.596,12.5-12.5s-5.597-12.5-12.5-12.5H99.5c-6.903,0-12.5,5.596-12.5,12.5
+			S92.597,172.001,99.5,172.001z" fill="white"/>
+		<path d="M177.332,229.501c0-6.903-5.597-12.5-12.5-12.5H99.5c-6.903,0-12.5,5.597-12.5,12.5s5.597,12.5,12.5,12.5h65.332
+			C171.735,242.001,177.332,236.404,177.332,229.501z" fill="white"/>
+		<path d="M280.168,172.001H345.5c6.902,0,12.5-5.596,12.5-12.5s-5.598-12.5-12.5-12.5h-65.332c-6.902,0-12.5,5.596-12.5,12.5
+			S273.266,172.001,280.168,172.001z" fill="white"/>
+		<path d="M280.168,242.001H345.5c6.902,0,12.5-5.597,12.5-12.5s-5.598-12.5-12.5-12.5h-65.332c-6.902,0-12.5,5.597-12.5,12.5
+			S273.266,242.001,280.168,242.001z" fill="white"/>
+	</g>
+</svg>
+            </div>
+
+            <div class="col-8 d-flex justify-content-center flex-column">
+                <p class="display-3 my-3 text-light fw-bold">Open Source</p>
+                <p class="text-light fs-3">View the step-by-step process behind how we are able to compile our code with Discord 
+				by accessing our open-sourced code on <a href="https://github.com/joshuageddes/Compiler-Bot/" class="text-light" target="_blank">Github</a>.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+    <!-- App.js -->
+    <script src="app.js"></script>
+</body>
+</html>
