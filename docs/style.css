@@ -7,6 +7,7 @@
     --black: #282828;
     --white: #FFFFFF;
     --blue: #2294C5;
+    --turqoise: #569EC6;
 
 }
 
@@ -66,13 +67,19 @@
 }
 
 .accordion-item{
-    background: var(--white) !important;
+    background: transparent !important;
+    border: none !important;
 }
 
-.accordion-header{
+
+
+.accordion-body{
     background: transparent !important;
+
 }
 
 .accordion-button{
-    background: var(--grey) !important;
+    background: var(--turqoise) !important;
+    height: 10vh;
+    font-size: 2rem !important;
 }
