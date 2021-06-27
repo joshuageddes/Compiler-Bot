@@ -6,8 +6,9 @@
     --lightgrey: #8D7F7F;
     --black: #282828;
     --white: #FFFFFF;
-}
+    --blue: #2294C5;
 
+}
 
 
 /* Bootstrap Classes Redefinitions / Template Class Definitions */
@@ -28,6 +29,15 @@
     color: var(--lightgrey);
 }
 
+/* Navigation  */
+.logo{
+    height: 10vh;
+}
+
+.active{
+    color: var(--blue) !important;
+}
+
 /* Spotlight Section */
 .spotlight{
     /* margin-top: 15vh; */
@@ -35,9 +45,12 @@
 }
 
 .big-btn{
-    background: var(--grey);
+    background: var(--blue);
     border-radius: 2rem;
 }
 
 
 /* Information Section */
+.information{
+    background: linear-gradient(180deg, rgba(40, 51, 56, 0) 0%, #437E9A 100%);
+}
